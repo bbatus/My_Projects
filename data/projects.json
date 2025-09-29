@@ -3,12 +3,12 @@
     {
       "id": "project-finwatcher",
       "title": "Finwatcher",
-      "description": "Fintech şirketlerinin kampanyalarını otomatik olarak takip eden ve analiz eden web scraping uygulaması. Real-time veri toplama ve trend analizi özellikleri.",
-      "technologies": ["Python", "BeautifulSoup", "Selenium", "FastAPI", "PostgreSQL", "React"],
+      "description": "Türkiye'deki fintech ve e-ticaret platformlarındaki kampanya ve promosyonları takip eden web uygulaması. Platform karşılaştırmaları, kampanya detayları ve görsel analizlerle karar desteği sunar.",
+      "technologies": ["Python", "FastAPI", "PostgreSQL", "Next.js", "TypeScript", "Chart.js"],
       "media": {
         "type": "video",
         "content": {
-          "video": "assets/videos/28_08_Finwatcher.mp4"
+          "video": "assets/videos/finwatcher.mp4"
         }
       },
       "links": {
@@ -22,8 +22,8 @@
     {
       "id": "project-vodasentiment",
       "title": "VodaSentiment",
-      "description": "Şikayet sitelerinden Vodafone ile ilgili son şikayetleri otomatik olarak scrape eden ve Telegram grubuna anlık olarak ileten sentiment analiz sistemi.",
-      "technologies": ["Python", "BeautifulSoup", "Requests", "Telegram Bot API", "SQLite", "Schedule"],
+      "description": "Vodafone Pay ile ilgili müşteri şikayet ve yorumlarını toplayıp duygu analizi yapan, sonuçları modern bir web arayüzünde sunan tam teşekküllü uygulama.",
+      "technologies": ["FastAPI", "Python", "PostgreSQL", "Next.js", "TypeScript", "NLTK", "Transformers", "googletrans", "Docker"],
       "media": {
         "type": "video",
         "content": {
@@ -36,6 +36,74 @@
       "featured": true,
       "date": "2024-09-15",
       "category": "Automation"
+    },
+    {
+      "id": "project-ubpvm",
+      "title": "Unity Build Pipeline Visualizer & Manager",
+      "description": "Unity editöründe build pipeline'larını görselleştirme, optimize etme ve otomatikleştirme için kapsamlı Editor Window aracı.",
+      "technologies": ["Unity", "C#", "EditorWindow", "Graph UI"],
+      "media": {
+        "type": "image",
+        "content": {
+          "image": "assets/images/projects/ubpvm.png"
+        }
+      },
+      "links": {},
+      "featured": false,
+      "date": "2025-09-01",
+      "category": "DevTools"
+    },
+    {
+      "id": "project-exam-mate",
+      "title": "Exam_Mate",
+      "description": "Sertifika sınavlarına (GCP, AWS, Azure vb.) hazırlık için modern, interaktif ve kayıt gerektirmeyen pratik platform.",
+      "technologies": ["React", "TypeScript", "TailwindCSS", "NestJS", "PostgreSQL", "Prisma", "Redux Toolkit"],
+      "media": {
+        "type": "image",
+        "content": {
+          "image": "assets/images/projects/exam-mate.png"
+        }
+      },
+      "links": {},
+      "featured": false,
+      "date": "2024-07-20",
+      "category": "Full Stack"
+    },
+    {
+      "id": "project-eos",
+      "title": "EOS - Eğitim Otomasyon Sistemi",
+      "description": "Eğitim kurumları için modern otomasyon çözümü: öğrenci yönetimi, raporlama, ders programı ve veliler için portal.",
+      "technologies": ["Next.js", "React", "TypeScript", "TailwindCSS", "MongoDB", "Framer Motion", "Docker"],
+      "media": {
+        "type": "image",
+        "content": {
+          "image": "assets/images/projects/eos.png"
+        }
+      },
+      "links": {
+        "live": "https://eosdemoportal.com/"
+      },
+      "featured": true,
+      "date": "2024-12-01",
+      "category": "Full Stack"
+    },
+    {
+      "id": "project-crazy-fireman",
+      "title": "Crazy Fireman",
+      "description": "Unity ile geliştirilen FPS konsept oyun. Araç sürüşü, yangın söndürme mekanikleri ve puanlama sistemi içerir.",
+      "technologies": ["Unity", "C#", "Particle Effects"],
+      "media": {
+        "type": "image",
+        "content": {
+          "image": "assets/images/projects/crazy-fireman.png"
+        }
+      },
+      "links": {
+        "github": "https://github.com/bbatus/CrazyFireman"
+      },
+      "featured": false,
+      "date": "2023-08-01",
+      "category": "Game"
     }
   ]
 }
