@@ -85,14 +85,20 @@ class DataLoader {
      * @returns {Promise<Object>} JSON verisi
      */
     async fetchData(url) {
-        const response = await fetch(url);
+        // Cache-busting: GitHub Pages ve tarayıcı cache'lerini aşmak için
+        const cacheBuster = `t=${Date.now()}`;
+        const sep = url.includes('?') ? '&' : '?';
+        const requestUrl = `${url}${sep}${cacheBuster}`;
+
+        const response = await fetch(requestUrl, { cache: 'no-store' });
         
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
         const contentType = response.headers.get('content-type');
-        if (!contentType || !contentType.includes('application/json')) {
+        const looksLikeJson = url.endsWith('.json');
+        if (contentType && !contentType.includes('application/json') && !looksLikeJson) {
             throw new Error('Geçersiz JSON formatı');
         }
         
