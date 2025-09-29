@@ -67,7 +67,7 @@ class PortfolioApp {
      * Component'leri initialize eder
      */
     initializeComponents() {
-        console.log('🔧 Component'ler initialize ediliyor...');
+        console.log("🔧 Component'ler initialize ediliyor...");
         
         // Global component'leri al
         this.components = {
@@ -91,7 +91,7 @@ class PortfolioApp {
             throw new Error(`Eksik component'ler: ${missingComponents.join(', ')}`);
         }
         
-        console.log('✅ Tüm component'ler hazır');
+        console.log("✅ Tüm component'ler hazır");
     }
 
     /**
@@ -260,7 +260,7 @@ class PortfolioApp {
             this.handleThemeChange(e.detail);
         });
         
-        console.log('✅ Global event listener'lar kuruldu');
+        console.log("✅ Global event listener'lar kuruldu");
     }
 
     /**
