@@ -34,6 +34,25 @@
       "category": "Full Stack"
     },
     {
+      "id": "project-finwatcher",
+      "title": "Finwatcher",
+      "description": "Fintech şirketlerinin kampanyalarını otomatik olarak takip eden ve analiz eden web scraping uygulaması. Real-time veri toplama ve trend analizi özellikleri.",
+      "technologies": ["Python", "BeautifulSoup", "Selenium", "FastAPI", "PostgreSQL", "React"],
+      "media": {
+        "type": "video",
+        "content": {
+          "video": "assets/videos/28_08_Finwatcher.mp4"
+        }
+      },
+      "links": {
+        "github": "https://github.com/username/finwatcher",
+        "live": "https://finwatcher-demo.vercel.app"
+      },
+      "featured": true,
+      "date": "2024-08-28",
+      "category": "Full Stack"
+    },
+    {
       "id": "project-2",
       "title": "Hava Durumu Uygulaması",
       "description": "Vue.js ve OpenWeatherMap API kullanarak geliştirdiğim responsive hava durumu uygulaması. Konum tabanlı hava durumu ve 7 günlük tahmin.",
