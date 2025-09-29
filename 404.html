@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Sayfa Bulunamadı | Portfolyo</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <style>
+        .error-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body class="bg-background text-text-primary min-h-screen flex items-center justify-center">
+    <div class="text-center px-4">
+        <!-- 404 Illustration -->
+        <div class="error-animation mb-8">
+            <svg class="mx-auto h-32 w-32 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+        </div>
+        
+        <!-- Error Message -->
+        <h1 class="text-6xl font-bold text-primary mb-4">404</h1>
+        <h2 class="text-2xl font-semibold text-text-primary mb-4">Sayfa Bulunamadı</h2>
+        <p class="text-text-secondary mb-8 max-w-md mx-auto">
+            Aradığınız sayfa mevcut değil veya taşınmış olabilir. 
+            Ana sayfaya dönerek projelerimi inceleyebilirsiniz.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+            <a href="/" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-smooth">
+                <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                </svg>
+                Ana Sayfaya Dön
+            </a>
+            
+            <button onclick="history.back()" class="inline-flex items-center px-6 py-3 bg-surface text-text-primary border border-gray-300 rounded-lg hover:bg-gray-50 transition-smooth">
+                <svg class="mr-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Geri Git
+            </button>
+        </div>
+        
+        <!-- Additional Help -->
+        <div class="mt-12 text-sm text-text-secondary">
+            <p>Eğer bu bir hata olduğunu düşünüyorsanız:</p>
+            <div class="mt-2 space-x-4">
+                <a href="mailto:your-email@example.com" class="text-primary hover:underline">
+                    📧 İletişime Geçin
+                </a>
+                <a href="https://github.com/[username]/portfolio-website/issues" target="_blank" class="text-primary hover:underline">
+                    🐛 Hata Bildirin
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Theme Toggle (Optional) -->
+    <div class="fixed top-4 right-4">
+        <button id="theme-toggle" class="p-2 rounded-lg bg-surface hover:bg-gray-200 dark:hover:bg-gray-600 transition-smooth">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"></path>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Simple Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        // Get stored theme or default to light
+        const currentTheme = localStorage.getItem('portfolio-theme') || 'light';
+        html.classList.add(currentTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const isLight = html.classList.contains('light');
+            const newTheme = isLight ? 'dark' : 'light';
+            
+            html.classList.remove('light', 'dark');
+            html.classList.add(newTheme);
+            
+            localStorage.setItem('portfolio-theme', newTheme);
+        });
+    </script>
+</body>
+</html>

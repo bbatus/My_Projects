@@ -1,0 +1,144 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "E-Ticaret Web Uygulaması",
+      "description": "Modern React ve Node.js kullanarak geliştirdiğim full-stack e-ticaret platformu. Kullanıcı yönetimi, ürün kataloğu ve ödeme sistemi içeriyor.",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+      "media": {
+        "type": "multiple",
+        "content": {
+          "multiple": [
+            {
+              "type": "image",
+              "src": "assets/images/projects/ecommerce-1.png",
+              "alt": "E-ticaret ana sayfa",
+              "title": "Ana Sayfa"
+            },
+            {
+              "type": "video",
+              "src": "assets/videos/ecommerce-demo.mp4",
+              "alt": "E-ticaret demo videosu",
+              "title": "Demo Video"
+            }
+          ]
+        }
+      },
+      "links": {
+        "github": "https://github.com/username/ecommerce-app",
+        "live": "https://ecommerce-demo.vercel.app",
+        "documentation": "https://github.com/username/ecommerce-app/wiki"
+      },
+      "featured": true,
+      "date": "2024-01-15",
+      "category": "Full Stack"
+    },
+    {
+      "id": "project-2",
+      "title": "Hava Durumu Uygulaması",
+      "description": "Vue.js ve OpenWeatherMap API kullanarak geliştirdiğim responsive hava durumu uygulaması. Konum tabanlı hava durumu ve 7 günlük tahmin.",
+      "technologies": ["Vue.js", "JavaScript", "CSS3", "OpenWeatherMap API"],
+      "media": {
+        "type": "image",
+        "content": {
+          "image": "assets/images/projects/weather-app.png"
+        }
+      },
+      "links": {
+        "github": "https://github.com/username/weather-app",
+        "live": "https://weather-app-demo.netlify.app"
+      },
+      "featured": false,
+      "date": "2023-11-20",
+      "category": "Frontend"
+    },
+    {
+      "id": "project-3",
+      "title": "Task Management System",
+      "description": "Angular ve Firebase kullanarak geliştirdiğim görev yönetim sistemi. Real-time güncellemeler, drag & drop ve takım işbirliği özellikleri.",
+      "technologies": ["Angular", "TypeScript", "Firebase", "Material UI"],
+      "media": {
+        "type": "youtube",
+        "content": {
+          "youtube": "dQw4w9WgXcQ"
+        }
+      },
+      "links": {
+        "github": "https://github.com/username/task-manager",
+        "live": "https://task-manager-demo.web.app"
+      },
+      "featured": true,
+      "date": "2023-09-10",
+      "category": "Full Stack"
+    },
+    {
+      "id": "project-4",
+      "title": "Mobil Fitness Uygulaması",
+      "description": "React Native ile geliştirdiğim cross-platform fitness uygulaması. Egzersiz takibi, kalori hesaplama ve ilerleme raporları.",
+      "technologies": ["React Native", "Expo", "SQLite", "Chart.js"],
+      "media": {
+        "type": "video",
+        "content": {
+          "video": "assets/videos/fitness-app-demo.mp4"
+        }
+      },
+      "links": {
+        "github": "https://github.com/username/fitness-app"
+      },
+      "featured": false,
+      "date": "2023-07-05",
+      "category": "Mobile"
+    },
+    {
+      "id": "project-5",
+      "title": "Blog CMS Sistemi",
+      "description": "PHP ve MySQL kullanarak geliştirdiğim içerik yönetim sistemi. Admin paneli, SEO optimizasyonu ve yorum sistemi içeriyor.",
+      "technologies": ["PHP", "MySQL", "Bootstrap", "jQuery"],
+      "media": {
+        "type": "multiple",
+        "content": {
+          "multiple": [
+            {
+              "type": "image",
+              "src": "assets/images/projects/blog-cms-1.png",
+              "alt": "Blog CMS admin paneli",
+              "title": "Admin Panel"
+            },
+            {
+              "type": "image",
+              "src": "assets/images/projects/blog-cms-2.png",
+              "alt": "Blog CMS frontend",
+              "title": "Frontend"
+            }
+          ]
+        }
+      },
+      "links": {
+        "github": "https://github.com/username/blog-cms",
+        "documentation": "https://github.com/username/blog-cms/blob/main/README.md"
+      },
+      "featured": false,
+      "date": "2023-05-12",
+      "category": "Backend"
+    },
+    {
+      "id": "project-6",
+      "title": "Cryptocurrency Tracker",
+      "description": "Python ve Django kullanarak geliştirdiğim kripto para takip uygulaması. Real-time fiyat güncellemeleri ve portföy yönetimi.",
+      "technologies": ["Python", "Django", "PostgreSQL", "CoinGecko API", "Chart.js"],
+      "media": {
+        "type": "image",
+        "content": {
+          "image": "assets/images/projects/crypto-tracker.png"
+        }
+      },
+      "links": {
+        "github": "https://github.com/username/crypto-tracker",
+        "live": "https://crypto-tracker-demo.herokuapp.com"
+      },
+      "featured": true,
+      "date": "2023-03-18",
+      "category": "Full Stack"
+    }
+  ]
+}

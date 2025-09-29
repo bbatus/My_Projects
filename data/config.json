@@ -1,0 +1,111 @@
+{
+  "site": {
+    "title": "Portfolyo | Batuhan Sarihan",
+    "subtitle": "Modern Web Geliştirme Projeleri",
+    "description": "Kişisel projelerimi sergileyen modern portfolyo websitesi. React, Vue.js, Angular ve diğer modern teknolojiler kullanarak geliştirdiğim projeler.",
+    "keywords": ["portfolyo", "web geliştirme", "react", "vue", "angular", "javascript", "typescript", "node.js"],
+    "url": "https://bbatus.github.io/My_Projects",
+    "language": "tr"
+  },
+  "author": {
+    "name": "Batuhan Sarihan",
+    "bio": "Yazılım geliştirme konusunda tutkulu bir geliştirici. Modern teknolojiler kullanarak yaratıcı çözümler üretiyorum. Full-stack web geliştirme, mobil uygulama geliştirme ve UI/UX tasarım konularında deneyimliyim.",
+    "avatar": "assets/images/avatar.jpg",
+    "location": "İstanbul, Türkiye",
+    "email": "batuhan@example.com",
+    "social": {
+      "github": "https://github.com/bbatus",
+      "linkedin": "https://linkedin.com/in/batuhan-sarihan",
+      "twitter": "https://twitter.com/bbatus",
+      "instagram": "https://instagram.com/bbatus",
+      "website": "https://bbatus.github.io"
+    }
+  },
+  "settings": {
+    "projectsPerPage": 6,
+    "showFeaturedFirst": true,
+    "enableDarkMode": true,
+    "enableAnimations": true,
+    "lazyLoadImages": true,
+    "showProjectDates": true,
+    "showTechnologies": true,
+    "enableProjectFiltering": true,
+    "enableProjectSearch": false
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "Tümü",
+      "description": "Tüm projeler"
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "description": "Frontend geliştirme projeleri"
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "description": "Backend geliştirme projeleri"
+    },
+    {
+      "id": "fullstack",
+      "name": "Full Stack",
+      "description": "Full-stack geliştirme projeleri"
+    },
+    {
+      "id": "mobile",
+      "name": "Mobile",
+      "description": "Mobil uygulama projeleri"
+    }
+  ],
+  "technologies": [
+    {
+      "name": "JavaScript",
+      "color": "#F7DF1E",
+      "icon": "fab fa-js-square"
+    },
+    {
+      "name": "TypeScript",
+      "color": "#3178C6",
+      "icon": "fab fa-js-square"
+    },
+    {
+      "name": "React",
+      "color": "#61DAFB",
+      "icon": "fab fa-react"
+    },
+    {
+      "name": "Vue.js",
+      "color": "#4FC08D",
+      "icon": "fab fa-vuejs"
+    },
+    {
+      "name": "Angular",
+      "color": "#DD0031",
+      "icon": "fab fa-angular"
+    },
+    {
+      "name": "Node.js",
+      "color": "#339933",
+      "icon": "fab fa-node-js"
+    },
+    {
+      "name": "Python",
+      "color": "#3776AB",
+      "icon": "fab fa-python"
+    },
+    {
+      "name": "PHP",
+      "color": "#777BB4",
+      "icon": "fab fa-php"
+    }
+  ],
+  "contact": {
+    "email": "[your-email@example.com]",
+    "phone": "+90 [phone-number]",
+    "address": "İstanbul, Türkiye",
+    "availability": "Freelance projeler için müsait",
+    "responseTime": "24 saat içinde"
+  }
+}

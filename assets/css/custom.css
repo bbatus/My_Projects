@@ -1,0 +1,281 @@
+/* Custom CSS for Portfolio Website */
+
+:root {
+  /* Light Theme Colors */
+  --primary: #3b82f6;
+  --primary-dark: #1d4ed8;
+  --secondary: #64748b;
+  --accent: #f59e0b;
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  
+  /* Dark Theme Colors */
+  --dark-primary: #60a5fa;
+  --dark-primary-dark: #3b82f6;
+  --dark-secondary: #94a3b8;
+  --dark-accent: #fbbf24;
+  --dark-background: #0f172a;
+  --dark-surface: #1e293b;
+  --dark-text-primary: #f1f5f9;
+  --dark-text-secondary: #cbd5e1;
+}
+
+/* Theme Classes */
+.light {
+  --current-primary: var(--primary);
+  --current-primary-dark: var(--primary-dark);
+  --current-secondary: var(--secondary);
+  --current-accent: var(--accent);
+  --current-background: var(--background);
+  --current-surface: var(--surface);
+  --current-text-primary: var(--text-primary);
+  --current-text-secondary: var(--text-secondary);
+}
+
+.dark {
+  --current-primary: var(--dark-primary);
+  --current-primary-dark: var(--dark-primary-dark);
+  --current-secondary: var(--dark-secondary);
+  --current-accent: var(--dark-accent);
+  --current-background: var(--dark-background);
+  --current-surface: var(--dark-surface);
+  --current-text-primary: var(--dark-text-primary);
+  --current-text-secondary: var(--dark-text-secondary);
+}
+
+/* Smooth Transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Card Hover Effects */
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.loading {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--current-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--current-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--current-primary);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  /* Touch-friendly tap targets */
+  .project-card {
+    min-height: 44px; /* iOS minimum tap target */
+  }
+  
+  /* Improved mobile navigation */
+  .mobile-menu-item {
+    padding: 12px 16px;
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+  
+  /* Better mobile typography */
+  .text-display { font-size: 2.5rem; }
+  .text-h1 { font-size: 2rem; }
+  .text-h2 { font-size: 1.75rem; }
+  
+  /* Mobile-specific spacing */
+  .mobile-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Touch-friendly buttons */
+  button, .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Mobile video controls */
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile carousel improvements */
+  .carousel-tab {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px 12px;
+  }
+}
+
+/* Tablet Optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet-specific grid adjustments */
+  .tablet-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  /* Tablet navigation */
+  .tablet-nav {
+    padding: 0 2rem;
+  }
+}
+
+/* Desktop Optimizations */
+@media (min-width: 1024px) {
+  /* Desktop hover states */
+  .desktop-hover:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Desktop-specific animations */
+  .desktop-animation {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* High DPI / Retina Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Crisp images on retina displays */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  /* Landscape-specific adjustments */
+  .hero-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .mobile-landscape-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .project-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .project-card {
+    border: 2px solid currentColor;
+  }
+  
+  button, .btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Dark Mode Media Query Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --system-background: var(--dark-background);
+    --system-text: var(--dark-text-primary);
+  }
+}
+
+/* Focus Styles for Accessibility */
+.focus-visible:focus-visible,
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--current-primary);
+  outline-offset: 2px;
+}
+
+/* Loading States */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Text Truncation Utilities */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
